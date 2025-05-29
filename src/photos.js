@@ -6,9 +6,10 @@ const photos = images.map((image)=>{
    img.src = `./pictures/${image}`;
 
    return{
-     src: `./pictures/${image}`,
+     src: `./pictures/${image.filename}`,
     width: img.width,
     height: img.height, 
+    alt: image.alt 
    };
 
 });

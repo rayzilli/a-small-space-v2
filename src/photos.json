@@ -1,9 +1,19 @@
 
 [
-    "car.jpg",
-    "house.jpg",
-    "DSC00778.jpg",
-    "DSC_0331.jpg"
+     {
+    "filename": "DSC00778.jpg",
+    "alt": "a window filled with plants and a clay hanging pot"
+     },
+
+     {
+        "filename": "DSC01224.jpg",
+        "alt":"white building with a blue door in the winter"
+     },
+       {
+        "filename": "DSC01224.jpg",
+        "alt":"white building with a blue door in the winter"
+     }
+
 
 ]
 
