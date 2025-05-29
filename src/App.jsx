@@ -12,6 +12,7 @@ function App() {
     <p>HELLO WORLD</p>
     <MasonryPhotoAlbum photos={photos} columns={
       (containerWidth) =>{
+        console.log("container width: ", containerWidth);
         if (containerWidth < 768){
           return 1;
         } else{
@@ -19,8 +20,7 @@ function App() {
         }
       }
 
-
-    } />;
+    } />
     </>
   )
 }
