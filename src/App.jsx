@@ -6,10 +6,10 @@ import images from "./photos.json";
 
 function App() {
   const [photos, setPhotos] = useState([]);
-  const [loading, setLoading] = useState(true); // Added loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadPhotos = async () => { // Made loadPhotos async
+    const loadPhotos = async () => { 
       const loadedPhotos = await Promise.all(
         images.map((image) => {
           const img = new Image();
@@ -32,13 +32,13 @@ function App() {
       );
 
       setPhotos(loadedPhotos.filter(photo => photo !== null));
-      setLoading(false); // Set loading to false after photos are loaded
+      setLoading(false); 
     };
 
     loadPhotos();
   }, []);
 
-  if (loading) { // Conditional rendering for loading state
+  if (loading) { 
     return <div>Loading...</div>;
   }
 
