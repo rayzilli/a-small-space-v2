@@ -41,6 +41,9 @@ function App() {
     <MasonryPhotoAlbum 
       photos={photos} 
       columns={(containerWidth) => (containerWidth < 768 ? 1 : 2)} 
+      componentsProps={{
+  image: { loading: "lazy" },
+}}
     />
   );
 }
